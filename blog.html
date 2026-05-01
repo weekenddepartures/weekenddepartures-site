@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Weekend Departures</title>
+  <meta name="description" content="Field notes on points, travel hacking, and squeezing the most out of every credit card swipe. Published on Substack." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">W</span>
+        Weekend Departures
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#free-tools">Free Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#services">Work With Me</a></li>
+        <li><a href="index.html#newsletter" class="btn btn-primary" style="padding:10px 20px;">Subscribe</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container-narrow">
+      <span class="section-eyebrow">The Blog</span>
+      <h1>Field <em>notes</em></h1>
+      <p>Quick takes on points, travel hacking, and squeezing the most out of every credit card swipe. Published on Substack — read here, subscribe there.</p>
+    </div>
+  </section>
+
+  <section class="blog-shell">
+    <div class="container-narrow">
+      <div class="blog-list">
+
+        <a href="https://substack.com/@weekenddepartures/note/p-195762496?r=62qmph&utm_source=notes-share-action&utm_medium=web" target="_blank" rel="noopener" class="blog-card">
+          <div class="blog-meta">
+            <span>Substack note</span>
+            <span>·</span>
+            <span>Read on Substack</span>
+          </div>
+          <h3>Latest from Weekend Departures</h3>
+          <p>A field note on travel, points, or credit card strategy. Tap to read the full post and join the conversation on Substack.</p>
+          <span class="read">Read the note</span>
+        </a>
+
+        <a href="https://substack.com/@weekenddepartures/note/p-171954301?utm_source=notes-share-action&r=62qmph" target="_blank" rel="noopener" class="blog-card">
+          <div class="blog-meta">
+            <span>Substack note</span>
+            <span>·</span>
+            <span>Read on Substack</span>
+          </div>
+          <h3>From the field</h3>
+          <p>A short, sharp take on something happening in the points-and-travel world. Tap to read the full post on Substack.</p>
+          <span class="read">Read the note</span>
+        </a>
+
+        <a href="https://substack.com/@weekenddepartures/note/c-161073396?utm_source=notes-share-action&r=62qmph" target="_blank" rel="noopener" class="blog-card">
+          <div class="blog-meta">
+            <span>Substack discussion</span>
+            <span>·</span>
+            <span>Read on Substack</span>
+          </div>
+          <h3>Conversation worth reading</h3>
+          <p>A discussion thread from the Weekend Departures community on Substack. Tap to jump in.</p>
+          <span class="read">Read the thread</span>
+        </a>
+
+      </div>
+
+      <div class="blog-substack-cta">
+        <p>Want every new post delivered to your inbox?</p>
+        <a href="https://weekenddepartures.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Follow on Substack →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: 0; padding-top: 0;">
+        <div>© <span id="year"></span> Weekend Departures</div>
+        <div class="legal">
+          <a href="index.html">Home</a>
+          <a href="card-finder.html">Card Finder</a>
+          <a href="spending-optimizer.html">Spending Optimizer</a>
+          <a href="award-calculator.html">Award Calculator</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
