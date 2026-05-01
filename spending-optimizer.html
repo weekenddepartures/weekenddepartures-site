@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spending Optimizer — Weekend Departures</title>
+  <meta name="description" content="Pick the cards you own, input your monthly spend, and see which card to use for every category. Plus your projected annual points." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">W</span>
+        Weekend Departures
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#free-tools">Free Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#services">Work With Me</a></li>
+        <li><a href="index.html#newsletter" class="btn btn-primary" style="padding:10px 20px;">Subscribe</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container-narrow">
+      <span class="section-eyebrow">Free tool</span>
+      <h1>Optimize <em>every swipe</em></h1>
+      <p>Tell us which cards are in your wallet and how much you spend each month. We'll map every category to the best card — and project your annual earn.</p>
+    </div>
+  </section>
+
+  <section class="tool-shell">
+    <div class="container-narrow">
+      <div class="tool-panel">
+
+        <div class="step-label">Step 1</div>
+        <h2 class="question">Which cards do you have?</h2>
+        <p class="question-sub">Select all that apply. More cards = more granular optimization.</p>
+        <div class="cards-picker" id="cardsPicker"></div>
+        <p id="cardsHint" class="question-sub" style="margin-top: 14px;"></p>
+
+        <div style="margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--line);"></div>
+        <div class="step-label">Step 2</div>
+        <h2 class="question">How much do you spend each month?</h2>
+        <p class="question-sub">Approximate is fine. We convert to annual automatically.</p>
+        <div class="spend-grid" id="spendGrid"></div>
+
+        <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid var(--line);"></div>
+        <div class="step-label">Step 3</div>
+        <h2 class="question">Your optimized wallet</h2>
+        <div id="resultsArea"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: 0; padding-top: 0;">
+        <div>© <span id="year"></span> Weekend Departures</div>
+        <div class="legal">
+          <a href="index.html">Home</a>
+          <a href="card-finder.html">Card Finder</a>
+          <a href="award-calculator.html">Award Calculator</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="optimizer.js"></script>
+</body>
+</html>
