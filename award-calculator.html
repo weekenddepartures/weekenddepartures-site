@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Award Flight Value Calculator — Weekend Departures</title>
+  <meta name="description" content="Should you pay cash or burn miles? Find out exactly what your points are worth on any flight redemption — instantly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">W</span>
+        Weekend Departures
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#free-tools">Free Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#services">Work With Me</a></li>
+        <li><a href="index.html#newsletter" class="btn btn-primary" style="padding:10px 20px;">Subscribe</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container-narrow">
+      <span class="section-eyebrow">Free tool</span>
+      <h1>Cash or <em>miles?</em></h1>
+      <p>Drop in any flight redemption — we'll tell you exactly what your points are worth, and whether to swipe the credit card or burn the miles.</p>
+    </div>
+  </section>
+
+  <section class="tool-shell">
+    <div class="container-narrow">
+      <div class="tool-panel">
+
+        <div class="step-label">The numbers</div>
+        <h2 class="question">Enter your flight</h2>
+        <p class="question-sub">All you need is the cash price and the miles required from the same booking page.</p>
+
+        <div class="awc-grid">
+          <label class="awc-field">
+            <span>Route <span class="awc-opt">(optional)</span></span>
+            <input type="text" id="awc-route" placeholder="e.g. JFK → LHR" />
+          </label>
+
+          <label class="awc-field">
+            <span>Cabin <span class="awc-opt">(optional)</span></span>
+            <select id="awc-cabin">
+              <option value="">—</option>
+              <option value="economy">Economy</option>
+              <option value="premium">Premium Economy</option>
+              <option value="business">Business</option>
+              <option value="first">First</option>
+            </select>
+          </label>
+
+          <label class="awc-field">
+            <span>Cash price (USD)</span>
+            <div class="awc-input-prefix">
+              <span>$</span>
+              <input type="number" id="awc-cash" min="0" step="1" placeholder="850" inputmode="numeric" />
+            </div>
+          </label>
+
+          <label class="awc-field">
+            <span>Miles / points required</span>
+            <input type="number" id="awc-miles" min="0" step="500" placeholder="60000" inputmode="numeric" />
+          </label>
+
+          <label class="awc-field">
+            <span>Taxes & fees on award (USD) <span class="awc-opt">(optional)</span></span>
+            <div class="awc-input-prefix">
+              <span>$</span>
+              <input type="number" id="awc-fees" min="0" step="1" placeholder="50" inputmode="numeric" />
+            </div>
+          </label>
+
+          <label class="awc-field">
+            <span>Points currency <span class="awc-opt">(optional)</span></span>
+            <select id="awc-currency">
+              <option value="">—</option>
+              <option value="chase">Chase Ultimate Rewards</option>
+              <option value="amex">Amex Membership Rewards</option>
+              <option value="capone">Capital One Miles</option>
+              <option value="citi">Citi ThankYou Points</option>
+              <option value="united">United MileagePlus</option>
+              <option value="aa">American AAdvantage</option>
+              <option value="delta">Delta SkyMiles</option>
+              <option value="aircanada">Air Canada Aeroplan</option>
+              <option value="hyatt">World of Hyatt</option>
+              <option value="marriott">Marriott Bonvoy</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="btn btn-ghost" id="awc-reset">Reset</button>
+          <button class="btn btn-primary" id="awc-calc">Calculate value →</button>
+        </div>
+
+        <div id="awc-results" style="display:none; margin-top: 40px; padding-top: 40px; border-top: 1px solid var(--line);"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: 0; padding-top: 0;">
+        <div>© <span id="year"></span> Weekend Departures</div>
+        <div class="legal">
+          <a href="index.html">Home</a>
+          <a href="card-finder.html">Card Finder</a>
+          <a href="spending-optimizer.html">Spending Optimizer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="award-calculator.js"></script>
+</body>
+</html>
