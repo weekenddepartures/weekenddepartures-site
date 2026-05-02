@@ -141,6 +141,268 @@
     <div class="container">
       <div class="section-head">
         <span class="section-eyebrow">Work with me</span>
+        <h2>Done with DIY? <em>Let's build it together.</em></h2>
+        <p style="color: var(--gray-light);">Two ways to skip the months of forum-reading and get a points strategy mapped to your real life.</p>
+      </div>
+
+      <div class="services-grid services-grid-2">
+        <div class="service-card">
+          <h3>Personalized Points & Credit Card</h3>
+          <p>A one-on-one session built around your actual spending, credit profile, and travel goals. Walk away with a card stack to apply for, a 12-month welcome bonus calendar, and a plan you can actually execute.</p>
+          <ul>
+            <li>Credit profile review</li>
+            <li>Custom card stack recommendation</li>
+            <li>Welcome bonus timing &amp; sequencing</li>
+            <li>Recording + written follow-up</li>
+          </ul>
+          <a href="https://nas.com/weekenddepartures" target="_blank" rel="noopener" class="btn btn-gold">Apply now →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Fly with Points</h3>
+          <p>You have the points. Now what? We map a specific trip — flights, hotels, transfers — using the points you already have, plus the ones we'll earn together. No guesswork, no missed sweet spots.</p>
+          <ul>
+            <li>Award availability deep-dive</li>
+            <li>Multi-airline routing strategy</li>
+            <li>Hotel sweet spots for your dates</li>
+            <li>Booking walkthrough — start to finish</li>
+          </ul>
+          <a href="https://nas.com/weekenddepartures" target="_blank" rel="noopener" class="btn btn-gold">Book a session →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLOG PREVIEW ============ -->
+  <section class="blog-preview" id="blog-preview">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">From the blog</span>
+        <h2>Field <em>notes & guides</em></h2>
+        <p>Real trips, real numbers. Bite-size posts from the Substack plus deep-dive guides on Nas.io.</p>
+      </div>
+      <div style="text-align: center;">
+        <a href="blog.html" class="btn btn-outline btn-large">Read the blog →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter" id="newsletter">
+    <div class="container-narrow">
+      <span class="section-eyebrow">The newsletter</span>
+      <h2>The best of points & travel, <em>straight to your inbox.</em></h2>
+      <p>Top card offers, transfer bonuses, and award sweet spots — curated so you don't have to doom-scroll r/churning.</p>
+
+      <div class="substack-embed-wrap">
+        <iframe
+          src="https://weekenddepartures.substack.com/embed"
+          width="480"
+          height="320"
+          frameborder="0"
+          scrolling="no"
+          title="Subscribe to Weekend Departures">
+        </iframe>
+      </div>
+
+      <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">W</span>
+            Weekend Departures
+          </a>
+          <p>Smarter way to travel, more for less. A credit card points and travel-hacking blog for people who'd rather earn their vacation than pay for it.</p>
+        </div>
+        <div>
+          <h5>Tools</h5>
+          <ul>
+            <li><a href="card-finder.html">Card Finder</a></li>
+            <li><a href="spending-optimizer.html">Spending Optimizer</a></li>
+            <li><a href="award-calculator.html">Award Calculator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Learn</h5>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#services">Work With Me</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul>
+            <li><a href="mailto:hello@weekenddepartures.co">Contact</a></li>
+            <li><a href="https://nas.com/weekenddepartures" target="_blank" rel="noopener">Book a session</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© <span id="year"></span> Weekend Departures. All rights reserved.</div>
+        <div class="legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Disclosure</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekend Departures — Smarter way to travel, more for less</title>
+  <meta name="description" content="A credit card points and travel hacking blog. Free tools, honest reviews, and a playbook for traveling more for less." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="Weekend Departures home">
+        <span class="logo-mark">W</span>
+        Weekend Departures
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#free-tools">Free Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#services">Work With Me</a></li>
+        <li><a href="#newsletter" class="btn btn-primary" style="padding:10px 20px;">Subscribe</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-eyebrow">Points · Travel · Cards</span>
+      <h1>Travel more. Spend less.<br><em>Earn everything.</em></h1>
+      <p class="hero-sub">The credit card points playbook for people who'd rather be in first class than fixated on fees. Start free — learn fast.</p>
+      <div class="hero-ctas">
+        <a href="card-finder.html" class="btn btn-primary btn-large">Find my first card</a>
+        <a href="#services" class="btn btn-outline btn-large">Work with me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FREE TOOLS ============ -->
+  <section class="tools" id="free-tools">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Free tools</span>
+        <h2>Start earning in minutes</h2>
+        <p>Three quick tools to turn your regular spending into flights, hotels, and weekends away — no spreadsheets required.</p>
+      </div>
+
+      <div class="tools-grid">
+        <a href="card-finder.html" class="tool-card">
+          <div class="tool-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>
+          </div>
+          <h3>Card Finder</h3>
+          <p>Three quick questions — credit score, rewards style, annual fee tolerance — and get a beginner-friendly shortlist with plain-English explanations.</p>
+          <span class="arrow">Take the quiz</span>
+        </a>
+
+        <a href="spending-optimizer.html" class="tool-card">
+          <div class="tool-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+          </div>
+          <h3>Spending Optimizer</h3>
+          <p>Pick the cards you own, drop in your monthly spend by category, and see which card to swipe where — plus your projected annual points.</p>
+          <span class="arrow">Optimize my wallet</span>
+        </a>
+
+        <a href="award-calculator.html" class="tool-card">
+          <div class="tool-icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10"/><path d="M12 2a15 15 0 0 0-4 10 15 15 0 0 0 4 10"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Award Flight Calculator</h3>
+          <p>Plug in any flight redemption — cash price + miles. We'll tell you exactly what your points are worth and whether to burn miles or pay cash.</p>
+          <span class="arrow">Calculate value</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">How it works</span>
+        <h2>Three steps to free flights</h2>
+        <p>No hacks, no burner accounts — just a clean, repeatable system for turning the money you already spend into serious travel.</p>
+      </div>
+
+      <div class="how-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Find your card</h3>
+          <p>Match a card to your credit profile and how you actually travel. Welcome bonuses do the heavy lifting here.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Spend on purpose</h3>
+          <p>Use the Spending Optimizer to route every category to the right card. No extra spending — just smarter routing.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Redeem for travel</h3>
+          <p>Transfer points to airline and hotel partners at the right moments. That's where 1¢ points quietly become 2–4¢.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / MEET YOUR GUIDE ============ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-wrap">
+          <img src="founder.jpg" alt="Founder of Weekend Departures" class="about-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="about-photo-placeholder">
+            <span class="placeholder-icon">📸</span>
+            <span class="placeholder-label">Add photo</span>
+            <span class="placeholder-instruction">Drop a file named<br><code>founder.jpg</code><br>in this folder</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-eyebrow">Meet your guide</span>
+          <h2>Helping people fly <em>business class on a coach budget.</em></h2>
+          <p>Weekend Departures started as a way to share what I'd learned the hard way — through years of credit-card spreadsheets, missed welcome bonuses, and one very expensive last-minute Tokyo flight. Today, it's a place for people who'd rather earn their next vacation than pay for it.</p>
+          <p>If you've ever felt like the "miles game" was rigged for finance bros and forum nerds, you're in the right place. The system's actually simple — once someone explains it without trying to flex.</p>
+          <a href="#services" class="btn btn-outline">See how I can help →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES (Nas.io) ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Work with me</span>
         <h2>Want a points strategy <em>built for you?</em></h2>
         <p style="color: var(--gray-light);">Skip the months of forum-reading. Book a one-on-one session and walk away with a personalized card stack, redemption plan, and the next 12 months mapped out.</p>
       </div>
