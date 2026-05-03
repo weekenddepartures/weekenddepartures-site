@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Weekend Departures</title>
+  <meta name="description" content="Field notes on points, travel hacking, and squeezing the most out of every credit card swipe. Plus in-depth guides on booking award flights and getting started." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">W</span>
+        Weekend Departures
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#free-tools">Free Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#services">Work With Me</a></li>
+        <li><a href="index.html#newsletter" class="btn btn-primary" style="padding:10px 20px;">Subscribe</a></li>
+      </ul>
+    </div>
+  </header>
+ 
+  <section class="page-header">
+    <div class="container-narrow">
+      <span class="section-eyebrow">The Blog</span>
+      <h1>Field <em>notes & guides</em></h1>
+      <p>Quick takes on points and travel hacking from the Substack, plus in-depth guides for getting started.</p>
+    </div>
+  </section>
+ 
+  <section class="blog-shell">
+    <div class="container-narrow">
+ 
+      <!-- Section: Substack Posts -->
+      <div class="blog-section-label">From the Substack</div>
+      <div class="blog-list">
+ 
+        <a href="https://open.substack.com/pub/weekenddepartures/p/the-ultimate-ritz-carlton-maldives?r=62qmph&utm_campaign=post&utm_medium=web" target="_blank" rel="noopener" class="blog-card-h">
+          <div class="blog-card-img">
+            <img src="images/blog-maldives.jpg" alt="The Ultimate Ritz-Carlton Maldives Review" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback'); this.parentElement.dataset.icon='🏝';" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-meta-icon">W</span>
+              <span>Weekend's Substack</span>
+            </div>
+            <h3>The Ultimate Ritz-Carlton Maldives Review</h3>
+            <p>An overwater villa, paid almost entirely with points — what worked, what surprised us, and exactly how to replicate the booking.</p>
+            <span class="read">Read on Substack</span>
+          </div>
+        </a>
+ 
+        <a href="https://open.substack.com/pub/weekenddepartures/p/how-i-booked-qatar-qsuites-to-the?r=62qmph&utm_campaign=post&utm_medium=web" target="_blank" rel="noopener" class="blog-card-h">
+          <div class="blog-card-img">
+            <img src="images/blog-qatar.jpg" alt="How I Booked Qatar QSuites to the Maldives" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback'); this.parentElement.dataset.icon='✈';" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-meta-icon">W</span>
+              <span>Weekend's Substack</span>
+            </div>
+            <h3>How I Booked Qatar QSuites to the Maldives</h3>
+            <p>The exact steps to lock in business class on one of the world's best products — using transferable points the rest of us actually have.</p>
+            <span class="read">Read on Substack</span>
+          </div>
+        </a>
+ 
+        <a href="https://open.substack.com/pub/weekenddepartures/p/rakuten-the-easiest-points-youre?r=62qmph&utm_campaign=post&utm_medium=web" target="_blank" rel="noopener" class="blog-card-h">
+          <div class="blog-card-img">
+            <img src="images/blog-rakuten.jpg" alt="Rakuten: The Easiest Points You're Not Earning" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback'); this.parentElement.dataset.icon='🛒';" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-meta-icon">W</span>
+              <span>Weekend's Substack</span>
+            </div>
+            <h3>Rakuten: The Easiest Points You're Not Earning</h3>
+            <p>The 30-second portal trick that quietly stacks Membership Rewards or cash back on top of every online purchase you already make.</p>
+            <span class="read">Read on Substack</span>
+          </div>
+        </a>
+ 
+      </div>
+ 
+      <!-- Section: Guides -->
+      <div class="blog-section-label" style="margin-top: 56px;">In-depth guides</div>
+      <div class="blog-list">
+ 
+        <a href="https://nas.com/weekenddepartures/digital-files/points-101-the-beginners-guide-to-free-luxury-trav-1" target="_blank" rel="noopener" class="blog-card-h">
+          <div class="blog-card-img">
+            <img src="images/blog-points101.jpg" alt="Points 101: The Beginner's Guide" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback'); this.parentElement.dataset.icon='📘';" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-meta-icon nas">N</span>
+              <span>Guide on Nas.io</span>
+            </div>
+            <h3>Points 101: The Beginner's Guide to Free Luxury Travel</h3>
+            <p>Start here. The mental model for how points actually work — the card stack, the welcome bonuses, and why "1 point ≠ 1 cent" is the most expensive misconception.</p>
+            <span class="read">Open the guide</span>
+          </div>
+        </a>
+ 
+        <a href="https://nas.com/weekenddepartures/digital-files/how-to-book-an-award-flight-using-points-a-simple-" target="_blank" rel="noopener" class="blog-card-h">
+          <div class="blog-card-img">
+            <img src="images/blog-awardflight.jpg" alt="How to Book an Award Flight Using Points" onerror="this.style.display='none'; this.parentElement.classList.add('img-fallback'); this.parentElement.dataset.icon='🛫';" />
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-meta">
+              <span class="blog-meta-icon nas">N</span>
+              <span>Guide on Nas.io</span>
+            </div>
+            <h3>How to Book an Award Flight Using Points</h3>
+            <p>The repeatable, no-fluff process — from finding award space to transferring points at the right moment to actually pulling the trigger on the booking.</p>
+            <span class="read">Open the guide</span>
+          </div>
+        </a>
+ 
+      </div>
+ 
+      <div class="blog-substack-cta">
+        <p>Want every new post delivered to your inbox?</p>
+        <a href="https://weekenddepartures.substack.com" target="_blank" rel="noopener" class="btn btn-primary">Follow on Substack →</a>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: 0; padding-top: 0;">
+        <div>© <span id="year"></span> Weekend Departures</div>
+        <div class="legal">
+          <a href="index.html">Home</a>
+          <a href="card-finder.html">Card Finder</a>
+          <a href="spending-optimizer.html">Spending Optimizer</a>
+          <a href="award-calculator.html">Award Calculator</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
